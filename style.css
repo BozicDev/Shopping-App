@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+:root {
+    --background : #1c1c1c;
+    --text-color : #fbfbfb;
+    --third-color: #376687;
+    --item-background:#f08233;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    user-select: none;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 5rem auto;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+ul li {
+    background-color: var(--item-background);
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    font-family: 'Outfit';
+}
+
+.container h2 {
+    font-size: 35px;
+    font-family: 'Outfit';
+    font-weight: bold;
+}
+
+.container img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.container p {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: 'Outfit';
+    
+}
+
+#item-input {
+    border: 2px solid var(--third-color);
+    outline: none;
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Outfit';
+    color: #d0d0d0;
+}
+
+#add-btn {
+    background-color: var(--third-color);
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Outfit';
+}
+
+#add-btn:hover {
+    background:#6aabda;
+    cursor: pointer;
+}
+
+.error {
+    color: rgb(255, 112, 112);
+    margin: 0 auto;
+}
+
+ul p {
+    margin: 0 auto;
+    color: rgb(255, 89, 89);
+}
